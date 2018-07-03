@@ -2580,10 +2580,11 @@
 
 	#footer {
 		padding: 4em 0 8em 0;
+		background-color: #333;
 	}
 
 		#footer a {
-			color: inherit;
+			color: #fff;
 			border-bottom-color: rgba(71, 71, 71, 0.25);
 		}
 
@@ -2602,15 +2603,15 @@
 		}
 
 			#footer .icons a {
-				color: #999;
+				color: #fff;
 			}
 
 				#footer .icons a:hover {
-					color: #474747;
+					color: #e0e0e0;
 				}
 
 		#footer .copyright {
-			color: #999;
+			color: #fff;
 			margin-top: 1.5em;
 			text-align: center;
 			font-size: 0.9em;
