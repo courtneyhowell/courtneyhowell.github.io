@@ -2603,15 +2603,15 @@
 		}
 
 			#footer .icons a {
-				color: #fff;
+				color: #e0e0e0;
 			}
 
 				#footer .icons a:hover {
-					color: #e0e0e0;
+					color: #37c0fb;
 				}
 
 		#footer .copyright {
-			color: #fff;
+			color: #e0e0e0;
 			margin-top: 1.5em;
 			text-align: center;
 			font-size: 0.9em;
