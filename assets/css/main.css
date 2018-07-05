@@ -2584,14 +2584,19 @@
 	}
 
 		#footer a {
-			color: #fff;
-			border-bottom-color: rgba(71, 71, 71, 0.25);
+			color: #e0e0e0;
+			border-bottom-color: transparent;
 		}
 
 			#footer a:hover {
 				color: #37c0fb;
 				border-bottom-color: transparent;
 			}
+
+		#footer h3 a {
+			color: #fff;
+			border-bottom-color: transparent;
+		}
 
 		#footer .container {
 			margin-bottom: 4em;
