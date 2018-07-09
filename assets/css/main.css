@@ -2584,12 +2584,12 @@
 	}
 
 		#footer a {
-			color: #e0e0e0;
+			color: #c0c0c0;
 			border-bottom-color: transparent;
 		}
 
 			#footer a:hover {
-				color: #37c0fb;
+				color: #e0e0e0;
 				border-bottom-color: transparent;
 			}
 
