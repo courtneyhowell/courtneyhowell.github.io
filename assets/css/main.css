@@ -2329,36 +2329,6 @@
 			margin: 0;
 		}
 
-/* Box 2 */
-
-	.box2.highlight {
-		text-align: center;
-	}
-
-	.box2.post {
-		position: relative;
-		margin: 0 0 2em 0;
-	}
-
-		.box2.post:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-
-		.box2.post .inner {
-			margin-left: calc(20% + 2em);
-		}
-
-			.box.post .inner > :last-child {
-				margin-bottom: 0;
-			}
-
-		.box2.post .image {
-			width: 20%;
-			margin: 0;
-		}
-
 /* Header */
 
 	#header {
