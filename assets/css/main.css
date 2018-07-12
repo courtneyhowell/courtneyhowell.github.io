@@ -2570,6 +2570,10 @@
 			background-repeat: no-repeat,						no-repeat,						repeat;
 		}
 
+			.wrapper.style2 header p {
+				color: #c0c0c0;
+			}
+
 		.wrapper.style3 {
 			background-color: #339900;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
