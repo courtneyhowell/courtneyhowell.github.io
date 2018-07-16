@@ -2614,7 +2614,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 0 0 8em 0;
 		background-color: #333;
 	}
 
@@ -2663,6 +2663,7 @@
 			height: 0.75em;
 			background-color: #339900;
 			background-image: url("images/bg01.png");
+			margin: 0 0 4em 0
 		}
 
 /* Index Footer */
