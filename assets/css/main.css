@@ -2592,6 +2592,16 @@
 					color: #339900 !important;
 				}
 
+			.wrapper.style3:before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 0.75em;
+				background-color: #339900;
+				background-image: url("images/bg01.png");
+			}
+
+
 /* CTA */
 
 	#cta {
