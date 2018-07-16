@@ -2592,15 +2592,6 @@
 					color: #339900 !important;
 				}
 
-			.wrapper.style3:before {
-				content: '';
-				display: block;
-				width: 100%;
-				height: 0.75em;
-				background-color: #339900;
-				background-image: url("images/bg01.png");
-			}
-
 
 /* CTA */
 
@@ -2664,6 +2655,61 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+		
+		#footer:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0.75em;
+			background-color: #339900;
+			background-image: url("images/bg01.png");
+		}
+
+/* Index Footer */
+
+	#footerindex {
+		padding: 4em 0 8em 0;
+		background-color: #333;
+	}
+
+		#footerindex a {
+			color: #c0c0c0;
+			border-bottom-color: transparent;
+		}
+
+			#footerindex a:hover {
+				color: #339900;
+				border-bottom-color: transparent;
+			}
+
+		#footerindex h3 {
+			color: #e0e0e0;
+		}
+
+		#footerindex .container {
+			margin-bottom: 4em;
+		}
+
+		#footerindex .icons {
+			text-align: center;
+			margin: 0;
+		}
+
+			#footerindex .icons a {
+				color: #c0c0c0;
+			}
+
+				#footerindex .icons a:hover {
+					color: #339900;
+				}
+
+		#footerindex .copyright {
+			color: #999;
+			margin-top: 1.5em;
+			text-align: center;
+			font-size: 0.9em;
+		}
+
 
 /* Wide */
 
