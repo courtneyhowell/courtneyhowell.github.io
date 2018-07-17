@@ -2305,6 +2305,10 @@
 		text-align: center;
 	}
 
+		.box.highlight li {
+			text-align: left;
+		}
+
 	.box.post {
 		position: relative;
 		margin: 0 0 2em 0;
