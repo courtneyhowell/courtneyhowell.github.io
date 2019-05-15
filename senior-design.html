@@ -78,7 +78,11 @@
 									We also designed an Android app for visualization of the magnetic field and easy use of data later.</p>
 
 									<h3>The Design</h3>
-									<p>In-depth discussion of design and project details once we get farther along in the project process.</p>
+									<p>The magnetic sensor we chose was the HMC1001 and HMC1002 for X&Y and Z axes, respectively. This sensor outputs a 
+									differential voltage, with a theoretical resolution of about 3nT. We used a differential, external ADC to convert the
+									differential voltage into a numerical value for storage in the microcontroller. We used the BGM111 as our microcontroller
+									because it has a built-in Bluetooth antenna and Bluetooth Low Energy capability. Transmission of magnetic sensor data
+									occurs over BLE </p>
 
 								</article>
 
