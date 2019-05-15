@@ -80,12 +80,15 @@
 									<h3>The Overall Design</h3>
 									<p>The magnetic sensor we chose was the HMC1001 and HMC1002 for X&Y and Z axes, respectively. This sensor outputs a 
 									differential voltage, with a theoretical resolution of about 3nT. We used a differential, external ADC to convert the
-									differential voltage into a numerical value for storage in the microcontroller. We used the BGM111 as our microcontroller
-									because it has a built-in Bluetooth antenna and Bluetooth Low Energy capability. Transmission of magnetic sensor data
+									differential voltage into a numerical value for storage in the microcontroller. Because the ADC only had one differential input
+									we used a 3 to 1 multiplexer to sequentially sample each axis, which also decreases cross-talk between lines. We used the BGM111 as our 
+									microcontroller	because it has a built-in Bluetooth antenna and Bluetooth Low Energy capability. Transmission of magnetic sensor data
 									occurs over BLE and is graphed in real time by an Android application, as well as being saved for use later. </p>
+									<p>I was in charge of designing and testing the power system and designing and laying out the PCB. Firmware, ADC selection and
+									circuitry, magnetic sensor circuitry, and the Android app were handled by my teammates.</p>
 									
 									<h3>The Power System</h3>
-									<p>I was in charge of designing and testing the power system for the device. Three steady voltage rails were required: 3.3V for the microcontroller,
+									<p>Three steady voltage rails were required: 3.3V for the microcontroller,
 									5V for the ADC and magnetic sensor, and 8V for a set/reset function in the magnetic sensor. I decided to use three 18650 lithium ion cells in 
 									series to achieve a nominal battery voltage of 11.1V. Because lithium ion batteries are rechargable, this would also decrease the lifetime cost of
 									the device, and the standard lithium ion cell size meant that the batteries themselves are easy and cheap to find. To achieve the three voltage rails
@@ -93,13 +96,13 @@
 									steady voltage rails to power the system. </p>
 									
 									<h3>PCB Design</h3>
-									<p>I was also in charge of design and layout of the PCB for the device. The final PCB was two 4-layer boards with signal planes on the top and bottom and two
+									<p>The final PCB was two 4-layer boards with signal planes on the top and bottom and two
 									internal ground planes. This stackup was chosen to minimize noise by minimizing the signal's distance to ground. Because the fluctuations in the
 									magnetic field produced voltage changes on the scale of millivolts, any noise from the buck converters, microcontroller, or ADC could potentially spoil
 									the readings from the magnetic sensor. Thus, the magnetic sensor was placed on its own, separate board, which was connected using ribbon cables to the
 									main board, which contained all other components and systems. </p>
 									<p>The PCB layout is shown in the picture below with each of the subsystems labeled.</p>
-									<img src="images/ham-radio-pcb.jpg" alt="" />
+									<img src="images/cms-pcb.jpg" alt="" />
 									<p> </p>
 									
 
