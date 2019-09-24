@@ -71,27 +71,30 @@
 
 									<span class="image featured"><img src="images/tape-library.jpg" alt="" /></span>
 
-									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-									consequat etiam lorem ipsum dolor sit amet nullam.</p>
+									<p>I interned at Spectra Logic as an Electrical Engineering Intern full time for the summer of 2017 and
+									part time during the spring 2018 semester. Over the summer, I had three main projects. </p>
 
-									<h3>And Yet Another Subheading</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-									justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-									ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-									vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-									Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-									rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+									<p>The first project was modeling current, speed, and position control of a BLDC motor in Simulink. The first 
+									BLDC motor model used a combination of circuit elements and signal blocks, so the modeling of the BLDC motor itself was
+									more accurate, but because a combination of element types was used, simulations took a very long time to run.
+									The second model aimed to decrease the run time of the simulation by using only signal blocks based on the mathematical 
+									model of a BLDC motor. The second model acted similarly enough to the circuit/signal combination model during the motor speeds 
+									of interest, so I used this second, faster BLDC model to design a PID controller that acted on the BLDC motor model. I first started 
+									with controlling current in the motor, then added speed and position control. </p>
+									
+									<p>For my second project, I designed and executed tests to determine optimum operational parameters of an optical sensor for use in a 
+									tape storage library. The optical sensor was used to check that the position of a robot within the library was correct, as well as
+									allow fine-tuning of the robot position, in order to avoid the robot jamming or damaging tapes. The tests I designed were to determine the
+									optimal angle of the robot actuator, optimal distance from the target, and optimal position in the vertical and horizontal space within the library. 
+									I analyzed the resulting data using Matlab to create 3D plots of intensity vs. distance & angle and intensity vs. vertical & horizontal position,
+									which clearly showed optimal operating conditions (or ranges of acceptable conditions) of the optical sensor on the robot. </p>
+									
+									<p>My final project was to design and build a test setup that could replicate and catch a startup corruption error of a robotic system.
+									To achieve this goal, I built a MOSFET-based reset circuit that would trigger the power reset of the system under test, and used an
+									Arduino to control this circuit. I programmed the Arduino to trigger the reset on a variable time delay (as timing was believed to be
+									the cause of the corruption error) and check over the serial terminal for corruption. "Corruption" was detected by checking for certain
+									phrases in the serial output that were outputted during normal startup and failed startup conditions. </p>
+									
 								</article>
 
 						</div>
